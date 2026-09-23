@@ -166,20 +166,17 @@ Nosotros lo hemos probado con alice_in_wonderland.txt, se podría probar con uno
 - Construye un dataset deslizante (`TextDataset`) para language modeling.
 - Entrena con `DataLoader` y `AdamW`.
 - Implementa validación y early stopping opcional.
-- Código del profesor excepto última sección
 
 ### `p5/corpus.py`
 
 - Carga un archivo `.txt` o concatena todos los `.txt` de un directorio.
 - Permite usar un corpus único o un conjunto de documentos como entrada.
-- Código del profesor (entendido)
 
 ### `p5/tokenizer.py`
 
 - Implementa un tokenizador BPE sencillo entrenado sobre el texto.
 - Genera un vocabulario a partir de caracteres y aprende merges frecuentes.
 - Codifica y decodifica texto en tokens.
-- Código del profesor (entendido)
 
 
 ### `p5/causal_llm.py`
@@ -187,13 +184,11 @@ Nosotros lo hemos probado con alice_in_wonderland.txt, se podría probar con uno
 - Implementa un modelo de lenguaje causal basado en Transformer.
 - Añade una cabeza linear de salida con `weight tying`.
 - Genera texto token por token usando sampling con temperatura.
-- Código del profesor (entendido)
 
 ### `p5/transformer.py` y `p5/attention.py`
 
 - Implementan un transformer básico con bloques de atención multi-cabeza.
 - Soportan atención causal para generación y atención completa para tareas de clasificación.
-- Códigos del profesor (entendidos)
 
 ### `ner/training.py`
 
