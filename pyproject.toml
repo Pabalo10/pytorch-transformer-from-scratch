@@ -1,0 +1,33 @@
+[project]
+name = "fdi-pln-2603-p5"
+version = "1.0"
+description = "Practica 5 de PLN: transformer pequeno para generacion y NER"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "click>=8.0",
+    "loguru>=0.7.3",
+    "numpy>=2.4.4",
+    "torch",
+]
+
+[project.scripts]
+fdi-pln-2603-p5 = "main:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = ["main", "generar_texto"]
+
+[tool.setuptools.packages.find]
+include = ["p5*", "ner*"]
+
+[[tool.uv.index]]
+name = "pytorch-cu121"
+url = "https://download.pytorch.org/whl/cu121"
+explicit = true
+
+[tool.uv.sources]
+torch = { index = "pytorch-cu121" }
