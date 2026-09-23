@@ -1,6 +1,6 @@
 # P5: Generación de Texto y Reconocimiento de Entidades con Transformer
 
-## 👥 Equipo de Desarrollo (Grupo 03)
+## 👥 Equipo de Desarrollo
 * **Pablo Alonso Romero**
 * **Rodrigo Jesús-Portanet Martínez**
 
